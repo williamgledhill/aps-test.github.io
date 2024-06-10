@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.bg-indigo-600{
+    transition: 0.3s ease-in-out 0s;
+}
+
+.bg-indigo-600:hover{
+    background: #6875F5;
+    scale: 95%;
+}
+
+#navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3); /* 30% opacity black */
+}
+
+#nav-item{
+    transition: 0.3s ease-in-out 0s;
+}
+
+#nav-item:hover{
+    color: #8793f7;
+}
+
+.superscript {
+    vertical-align: super;
+    font-size: x-small;
+    opacity: 0.5;
+}
+
+.italics{
+    text-decoration: underline;
+    text-decoration-color: #6875F5;
+    text-decoration-thickness: 4px;
+}
+
+.emphasis{
+    text-decoration: underline;
+    text-decoration-color: #6875F5;
+    text-decoration-thickness: 6px;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+#getStarted{
+    box-shadow: 0px 0px 25px 5px rgb(104, 117, 245, 0.4);
+}
+
+#propJourney{
+    line-height: 1.25;
+}
