@@ -21,6 +21,10 @@
     z-index: 1000;
     width: 100%;
     backdrop-filter: blur(10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.4); /* 30% opacity black */
 }
