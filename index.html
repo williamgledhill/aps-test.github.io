@@ -4,7 +4,7 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body class="bg-black">
@@ -30,11 +30,22 @@
                 </div>
             </div>
         </div>
+
+        <div id="navbar" class="w-full text-gray-50 md:hidden">
+            <div class="md:w-[1100px] mx-auto px-6">
+                <div id="navbar-text" class="container mx-auto py-3 flex items-center">
+                    <p class="w-full font-semibold text-xs">Alternative Property Solutions</p>
+                    <div class="w-full flex justify-end">
+                        <button id="getStarted" class="bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold">Get started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
-        <div class="container md:w-[1100px] mx-auto flex flex-col mt-36 md:flex-row items-center justify-center">
-            <div class="md:w-1/2 text-center md:text-left sm:mb-0 mt-3 p-6">
-                <h1 class="text-4xl sm:text-5xl text-gray-200 font-semibold">Property investing, made <span class="emphasis">easy</span>.</h1>
+        <div class="container md:w-[1100px] h-svh mx-auto flex flex-col md:flex-row items-center justify-center">
+            <div class="md:w-1/2 text-center md:text-left p-6 mt-20">
+                <h1 class="text-4xl sm:text-5xl text-gray-200 font-semibold">Property investing, made <span class="emphasis">easy</span></h1>
                 <p class="text-gray-300 md:text-medium text-lg my-10">We're a Canberra-based property consultancy dedicated to helping our clients achieve financial independence.</p>
                 <button id="getStarted" class="bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold">Get started ></button>
             </div>
@@ -43,158 +54,110 @@
             </div>
         </div>
 
-        <div class="container md:w-[1100px] mx-auto items-center flex justify-center md:mb-48">
+        <div class="container md:w-[1100px] mx-auto items-center flex flex-col justify-center mb-5">
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 p-6">
                 
-                <div id="highlight" class="mb-4 md:mb-0 ">
-                    <div class="flex items-center justify-start">
-                        <p class="text-6xl mr-3">💰</p>
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-4 border border-gray-700 bg-gray-900">
+                    <div class="h-full flex items-center justify-start">
+                        <p class="text-5xl mr-1">💰</p>
                         <div>
-                            <p class="text-3xl md:text-2xl text-gray-50 font-semibold mb-1">$500 million</p>
-                            <p class="text-gray-200 text-lg">In lifetime sales<span class="superscript"> 1</span></p>
+                            <p class="text-2xl md:text-xl text-gray-200 font-semibold">$500 million</p>
+                            <p class="text-gray-200 ">In lifetime sales</span></p>
                         </div>
                     </div>
                 </div>
 
-                <div id="highlight" class="mb-4 md:mb-0 ">
-                    <div class="flex items-center justify-start">
-                        <p class="text-6xl mr-3">🏠</p>
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-4 border border-gray-700 bg-gray-900">
+                    <div class="h-full flex items-center justify-start">
+                        <p class="text-5xl mr-2">🏠</p>
                         <div>
-                            <p class="text-3xl md:text-2xl text-gray-50 font-semibold mb-1">40+ years</p>
-                            <p class="text-gray-200 text-lg">Property experience<span class="superscript"> 2</span></p>
+                            <p class="text-2xl md:text-xl text-gray-50 font-semibold">40+ years</p>
+                            <p class="text-gray-50">Property experience</span></p>
                         </div>
                     </div>
                 </div>
 
-                <div id="highlight" class="mb-4 md:mb-0">
-                    <div class="flex items-center justify-start">
-                        <p class="text-6xl mr-3">🤝</p>
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-4 border border-gray-700 bg-gray-900">
+                    <div class="h-full flex items-center justify-start">
+                        <p class="text-5xl mr-2">👍</p>
                         <div>
-                            <p class="text-3xl md:text-2xl text-gray-50 font-semibold mb-1">100%</p>
-                            <p class="text-gray-200 text-lg">Would use us again<span class="superscript"> 3</span></p>
+                            <p class="text-2xl md:text-xl text-gray-50 font-semibold">100%</p>
+                            <p class="text-gray-50">Client satisfaction</span></p>
                         </div>
                     </div>
                 </div>
                
             </div>
 
-        </div>        
-
-        <div class="container md:w-[1100px] h-screen mx-auto my-16 items-center">
-            <div class="text-center container mx-auto">
-                <h1 class="text-3xl md:text-6xl text-gray-200 font-semibold px-6 md:my-6">Get <span class="emphasis">early access</span> to the best projects.</h1>
-            </div>
-            <img src="testprop.png" class="w-full h-64 p-6">
-            <p class="text-lg md:text-2xl text-gray-50 p-6 w-full text-center">Decades of experience in the property sector has given us access to the best developers across the nation.</p>
         </div>
 
-        <div class="container md:w-[1100px] h-screen mx-auto my-16 items-center">
-            <div class="text-center container mx-auto">
-                <h1 class="text-3xl sm:text-6xl text-gray-200 font-semibold px-6 md:my-6">Get investment advice <span class="emphasis">tailored</span> to your situation.</h1>
-            </div>
-            <img src="testprop.png" class="w-full h-64 p-6">
-            <p class="text-xl md:text-2xl text-gray-50 p-6 w-full text-center">40+ years of combined property experience grants us connections to developers and builders all around Australia.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 py-6 mx-10 md:mx-0 gap-6">
-                <div class="mb-3 flex">
-                    <h1 class="text-4xl mr-3 mt-1">🎨 </h1>
-                    <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Hello</h1>
-                        <p class="text-gray-50">enter text here. Welcome to alternative property</p>
-                    </div>
-                </div>
+        <hr class="" style="opacity: 0.2;">
 
-                <div class="mb-3 flex">
-                    <h1 class="text-4xl mr-3 mt-1">🎨 </h1>
-                    <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Hello</h1>
-                        <p class="text-gray-50">enter text here. Welcome to alternative property</p>
-                    </div>
+        <div class="container md:w-[1100px] mx-auto p-6 h-[95vh] md:h-[85vh] flex items-center justify-center">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+                <div class="md:order-2 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                    <img src="testprop.png">
                 </div>
-
-                <div class="mb-3 flex">
-                    <h1 class="text-4xl mr-3 mt-1">🎨 </h1>
-                    <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Hello</h1>
-                        <p class="text-gray-50">enter text here. Welcome to alternative property</p>
+                <div class="md:order-1 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
+                    <div class="container mx-auto">
+                        <p class="text-2xl text-indigo-700 mb-3">INVEST</p>
+                        <h1 class="text-3xl md:text-4xl text-gray-200 font-semibold mb-5">Get <span class="emphasis">early access</span> to the best projects.</h1>
                     </div>
+                    <p class="text-lg text-gray-50 w-full mb-6">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
+                    <div>
+                        <a class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Invest in off-the-plan ></a>
+                    </div>            
                 </div>
             </div>
         </div>
-        
-        <hr class="text-gray-900">
 
-        <div class="container md:w-[1100px] h-screen mx-auto my-16 items-center mt-12 md:mb-48">
-            <div class="text-center container mx-auto">
-                <h1 class="text-3xl md:text-6xl text-gray-200 font-semibold px-6 md:my-6">Get <span class="emphasis">connected</span> with our elite partners.</h1>
-            </div>
-            <img src="testprop.png" class="w-full h-64 p-6">
-            <p class="text-xl md:text-2xl text-gray-50 p-6 w-full text-center">Get early access to the best new developments across Australia.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 py-6 mx-10 md:mx-0 gap-6">
-                
-                <div class="mb-3 flex">    
-                    <h1 class="text-4xl mr-3 mt-1">🏦 </h1>
-                    <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Mortgage brokers</h1>
-                        <p class="text-gray-50">Find the cheapest mortgage with our mortgage broker partners.</p>
-                    </div>
+        <hr class="" style="opacity: 0.2;">
+
+        <div class="container md:w-[1100px] mx-auto p-6 h-[95vh] md:h-[85vh] flex items-center justify-center">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+                <div class="md:order-1 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                    <img src="testprop.png">
                 </div>
-
-                <div class="mb-3 flex">
-                    <h1 class="text-4xl mr-3 mt-1">🧾 </h1>
-                    <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Accountants</h1>
-                        <p class="text-gray-50">Make tax-time simple and easy with our accountant partners.</p>
+                <div class="md:order-2 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
+                    <div class="container mx-auto">
+                        <p class="text-2xl text-indigo-700 mb-3">STRATEGY</p>
+                        <h1 class="text-3xl md:text-4xl text-gray-200 font-semibold mb-5">Get <span class="emphasis">early access</span> to the best projects.</h1>
                     </div>
-                </div>
-
-                <div class="mb-3 flex">
-                    <h1 class="text-4xl mr-3 mt-1">🏠 </h1>
+                    <p class="text-lg text-gray-50 w-full mb-6">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
                     <div>
-                        <h1 class="text-2xl font-semibold text-gray-50 mb-1">Property managers</h1>
-                        <p class="text-gray-50">Spend as little time as possible on managing your investments.</p>
-                    </div>
+                        <a class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Learn about our strategy ></a>
+                    </div>            
                 </div>
-
             </div>
         </div>
 
-        <div class="container md:w-[1100px] mx-auto items-center mt-12 mb-24 md:mb-48">
-            <div class="grid grid-cols-1 md:grid-cols-2 mx-10">
-                <div>
-                    <h1 class="text-3xl text-gray-50 font-semibold mb-12 text-center md:text-left">Meet our team</h1>
+        <hr class="" style="opacity: 0.2;">
+
+        <div class="container md:w-[1100px] mx-auto p-6 h-[95vh] md:h-[85vh] flex items-center justify-center">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
+                <div class="md:order-2 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                    <img src="testprop.png">
                 </div>
-                <div class="">
-
-                    <div id="teamCard" class="flex flex-col md:flex-row items-center md:items-start p-6 rounded-lg border border-gray-800">
-                        <img src="simon.jpg" class="w-16 h-16 rounded-lg md:w-32 md:h-32 md:mb-0 mb-4 md:mr-4">
-                        <div class="flex flex-col w-full">
-                            <div class="flex flex-row md:flex-col items-center md:items-start mb-2 md:mb-0 w-full">
-                                <p class="text-gray-50 text-3xl font-semibold">Simon Phillips</p>
-                            </div>
-                            <p class="text-gray-50">This is the additional text that appears below both the image and name on smaller screens but to the right of the image on larger screens.</p>
-                        </div>
+                <div class="md:order-1 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
+                    <div class="container mx-auto">
+                        <p class="text-2xl text-indigo-700 mb-3">CONNECT</p>
+                        <h1 class="text-3xl md:text-4xl text-gray-200 font-semibold mb-5">Get <span class="emphasis">early access</span> to the best projects.</h1>
                     </div>
-                      
-                    <div id="teamCard" class="bg-gray-900 p-6 rounded-lg flex border border-gray-800">
-                        <img src="simon.jpg" class="rounded-lg mr-6">
-                        <div class="">
-                            <h1 class="text-gray-50 text-3xl mb-2 font-semibold">Simon Phillips</h1>
-                            <p class="text-gray-50">Simon has over 16 years of experience in the property sector, delivering products with a total sales volume over $500 million.</p>
-                        </div>
-                    </div>
-
+                    <p class="text-lg text-gray-50 w-full mb-6">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
+                    <div>
+                        <a class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Connect with partners ></a>
+                    </div>            
                 </div>
             </div>
         </div>
+
+        <hr class="" style="opacity: 0.2;">
 
         <div class="container md:w-[1100px] mx-auto items-center mt-12 mb-24 md:mb-48 text-center">
             <h1 id="propJourney" class="text-4xl sm:text-6xl text-gray-50 font-semibold px-12">Begin your property journey today</h1>
             <button id="getStarted" class="bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold mt-8">Get started ></button>
         </div>
-
-
-        <hr style="color: black; opacity: 0.4;">
 
         <div class="container md:w[1100px] mx-auto items-center text-center p-6">
             <p class="text-gray-500 mb-1">ABN 41 639 391 745</p>
