@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6df9da4c08.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-black">
 
@@ -31,7 +32,7 @@
             </div>
         </div>
 
-        <div id="navbar" class="w-full text-gray-50">
+        <div id="navbar" class="w-full text-gray-50 md:hidden">
             <div class="md:w-[1100px] mx-auto px-6">
                 <div id="navbar-text" class="container mx-auto py-3 flex items-center">
                     <p class="w-full font-semibold text-xs">Alternative Property Solutions</p>
@@ -54,13 +55,13 @@
             </div>
         </div>
 
-        <div class="container md:w-[1100px] h-[70vh] mx-auto items-center flex flex-col justify-center mb-5">
-            
+        <div class="container md:w-[1100px] h-[70vh] md:h-[auto] mx-auto items-center flex flex-col justify-center mb-5">
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 p-6">
                 
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-700 bg-gray-900">
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
                     <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-3">💰</p>
+                        <p class="text-5xl mr-5"><i class="fa-solid fa-sack-dollar text-indigo-600"></i></p>
                         <div>
                             <p class="text-2xl md:text-xl text-gray-200 font-semibold">$500 million</p>
                             <p class="text-gray-200 ">In lifetime sales</span></p>
@@ -68,9 +69,9 @@
                     </div>
                 </div>
 
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-700 bg-gray-900">
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
                     <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-3">🏠</p>
+                        <p class="text-5xl mr-5"><i class="fa-solid fa-house text-indigo-600"></i></p>
                         <div>
                             <p class="text-2xl md:text-xl text-gray-50 font-semibold">40+ years</p>
                             <p class="text-gray-50">Property experience</span></p>
@@ -78,9 +79,9 @@
                     </div>
                 </div>
 
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-700 bg-gray-900">
+                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
                     <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-3">👍</p>
+                        <p class="text-5xl mr-5"><i class="fa-solid fa-thumbs-up text-indigo-600"></i></p>
                         <div>
                             <p class="text-2xl md:text-xl text-gray-50 font-semibold">100%</p>
                             <p class="text-gray-50">Client satisfaction</span></p>
@@ -89,14 +90,13 @@
                 </div>
                
             </div>
-
         </div>
 
         <hr class="" style="opacity: 0.2;">
 
         <div class="container md:w-[1100px] mx-auto p-6 h-[105vh] md:h-[85vh] flex items-center justify-center">
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
-                <div class="md:order-2 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                <div class="md:order-2 flex items-center justify-center md:mx-8"> <!-- Added flex and items-center justify-center classes -->
                     <img src="testprop.png">
                 </div>
                 <div class="md:order-1 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
@@ -106,7 +106,7 @@
                     </div>
                     <p class="text-lg text-gray-50 w-full mb-7">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
                     <div>
-                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Invest in off-the-plan ></a>
+                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-800 bg-gray-900 font-semibold p-1 px-3">Invest in off-the-plan ></a>
                     </div>            
                 </div>
             </div>
@@ -116,7 +116,7 @@
 
         <div class="container md:w-[1100px] mx-auto p-6 h-[105vh] md:h-[85vh] flex items-center justify-center">
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
-                <div class="md:order-1 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                <div class="md:order-1 flex items-center justify-center md:mx-8"> <!-- Added flex and items-center justify-center classes -->
                     <img src="testprop.png">
                 </div>
                 <div class="md:order-2 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
@@ -126,7 +126,7 @@
                     </div>
                     <p class="text-lg text-gray-50 w-full mb-7">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
                     <div>
-                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Learn about our strategy ></a>
+                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-800 bg-gray-900 font-semibold p-1 px-3">Learn about our strategy ></a>
                     </div>            
                 </div>
             </div>
@@ -136,7 +136,7 @@
 
         <div class="container md:w-[1100px] mx-auto p-6 h-[105vh] md:h-[85vh] flex items-center justify-center">
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
-                <div class="md:order-2 flex items-center justify-center"> <!-- Added flex and items-center justify-center classes -->
+                <div class="md:order-2 flex items-center justify-center md:mx-8"> <!-- Added flex and items-center justify-center classes -->
                     <img src="testprop.png">
                 </div>
                 <div class="md:order-1 flex flex-col justify-center"> <!-- Added flex and justify-center classes -->
@@ -146,7 +146,7 @@
                     </div>
                     <p class="text-lg text-gray-50 w-full mb-7">Decades of experience in the property sector has given us access to the best developers across the nation. From the latest and greatest developers in Eastern Melbourne to the Kingston in Canberra, we've got you.</p>
                     <div>
-                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-700 bg-gray-900 font-semibold p-1 px-3">Connect with partners ></a>
+                        <a href="#" class="card-link text-gray-200 rounded-full border border-gray-800 bg-gray-900 font-semibold p-1 px-3">Connect with partners ></a>
                     </div>            
                 </div>
             </div>
@@ -154,10 +154,12 @@
 
         <hr class="" style="opacity: 0.2;">
 
-        <div class="container md:w-[1100px] mx-auto items-center mt-12 mb-24 md:mb-48 text-center">
-            <h1 id="propJourney" class="text-4xl sm:text-6xl text-gray-50 font-semibold px-12">Begin your property journey today</h1>
-            <button id="getStarted" class="bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold mt-8">Get started ></button>
-        </div>
+        <div class="container md:w-[1100px] h-[80vh] md:h-[50vh] mx-auto mt-12 mb-24 md:mb-48 text-center flex items-center justify-center">
+            <div>
+                <h1 id="propJourney" class="text-4xl sm:text-6xl text-gray-50 font-semibold px-12">Begin your property journey today</h1>
+                <button id="getStarted" class="bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold mt-8">Get started ></button>
+            </div>
+        </div>        
 
         <hr class="" style="opacity: 0.2;">
 
