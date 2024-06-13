@@ -57,6 +57,12 @@
     text-decoration-thickness: 5px;
 }
 
+.emphasisSM{
+    text-decoration: underline;
+    text-decoration-color: #6875F5;
+    text-decoration-thickness: 4px;
+}
+
 @keyframes fadeIn {
     from {
       opacity: 0;
