@@ -78,47 +78,6 @@
 
         <hr style="opacity: 0.2;">
 
-        <div class="container h-[70vh] md:h-[60vh] md:w-[1100px] mx-auto items-center flex flex-col justify-center py-12 px-6 hidden">
-
-            <h1 class="text-4xl sm:text-5xl text-gray-200 font-semibold mb-8 text-center">Our team's <span class="emphasis">experience</span></h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-                
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-5"><i class="fa-solid fa-sack-dollar text-gray-50"></i></p>
-                        <div>
-                            <p class="text-2xl md:text-xl text-gray-200 font-semibold">$500 million</p>
-                            <p class="text-gray-200 ">In lifetime sales</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-5"><i class="fa-solid fa-house text-gray-50"></i></p>
-                        <div>
-                            <p class="text-2xl md:text-xl text-gray-200 font-semibold">16 years</p>
-                            <p class="text-gray-200">Real estate experience</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="highlight" class="mb-4 md:mb-0 rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <p class="text-5xl mr-5"><i class="fa-solid fa-thumbs-up text-gray-50"></i></p>
-                        <div>
-                            <p class="text-2xl md:text-xl text-gray-200 font-semibold">100% say</p>
-                            <p class="text-gray-200">They'd recommend us</span></p>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-
-        <hr style="opacity: 0.2;">
-
         <div class="container h-screen md:w-[1100px] mx-auto p-6 flex items-center justify-center py-12 px-6">
             <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
                 <div class="md:order-2 flex items-center justify-center md:mx-8"> <!-- Added flex and items-center justify-center classes -->
@@ -180,11 +139,12 @@
         <hr style="opacity: 0.2;">
 
         <div class="container h-auto md:w-[1100px] mx-auto p-6 flex flex-col items-center justify-center py-12 px-6">
-            <h1 class="text-3xl md:text-4xl text-gray-200 font-semibold mb-6 text-center">
+            <h1 class="text-4xl md:text-5xl text-gray-200 font-semibold mb-6 text-center">
                 Read our client <span class="emphasis">testimonials</span>
             </h1>
-            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
-                
+
+            <div class="grid gap-6 grid-cols-1 w-full max-w-lg">
+            
                 <div id="highlight" class="rounded-lg p-5 border border-gray-800 bg-gray-900">
                     <div class="h-full flex items-center justify-start">
                         <div>
@@ -212,33 +172,6 @@
                     </div>
                 </div>
 
-                <div id="highlight" class="rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <div>
-                            <p class="text-gray-200 mb-3">Simon was knowledgeable about the real estate industry. I ended up investing in two apartments through him in Sydney. Very happy with the advice I've recieved.</p>
-                            <p class="text-xl md:text-xl text-gray-200 font-semibold">👩🏼‍🦳 Jane Smith</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="highlight" class="rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <div>
-                            <p class="text-gray-200 mb-3">Simon was knowledgeable about the real estate industry. I ended up investing in two apartments through him in Sydney. Very happy with the advice I've recieved.</p>
-                            <p class="text-xl md:text-xl text-gray-200 font-semibold">👩🏻‍🦰 Mary Brown</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="highlight" class="rounded-lg p-5 border border-gray-800 bg-gray-900">
-                    <div class="h-full flex items-center justify-start">
-                        <div>
-                            <p class="text-gray-200 mb-3">Simon was knowledgeable about the real estate industry. I ended up investing in two apartments through him in Sydney. Very happy with the advice I've recieved.</p>
-                            <p class="text-xl md:text-xl text-gray-200 font-semibold">👨🏼‍🦱 Jack Radford</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -246,6 +179,36 @@
 
         <div class="container md:w-[1100px] mx-auto flex flex-col items-center justify-center py-12 px-6">
             <h1 class="text-4xl md:text-5xl text-gray-200 font-semibold mb-6 text-center">FAQs</h1>
+            <div class="w-full flex justify-center items-center mb-6">
+                
+                <div class="max-w-lg w-full">
+
+                    <div class="text-left">
+                        <div class="flex justify-between items-center py-6 accordion-toggle cursor-pointer">
+                            <p id="head" class="text-gray-300">What is your business model?</p>
+                            <i id="chevron" class="fa-solid fa-chevron-down text-gray-300"></i>
+                        </div>
+                        <div id="accordion-hidden" class="mb-6 hidden">
+                            <p class="text-gray-300">We take commissions on the off-the-plan real estate that we sell.</p>
+                        </div>
+                        <hr class="opacity-30">
+                    </div>
+
+                    <div class="text-left">
+                        <div class="flex justify-between items-center py-6 accordion-toggle cursor-pointer">
+                            <p id="head" class="text-gray-300">What is your business model?</p>
+                            <i id="chevron" class="fa-solid fa-chevron-down text-gray-300"></i>
+                        </div>
+                        <div id="accordion-hidden" class="mb-6 hidden">
+                            <p class="text-gray-300">We take commissions on the off-the-plan real estate that we sell.</p>
+                        </div>
+                        <hr class="opacity-30">
+                    </div>
+
+                </div>
+            </div>
+            
+        
         </div>
 
         <hr style="opacity: 0.2;">
@@ -263,5 +226,32 @@
             <p class="text-gray-500 mb-1">ABN 41 639 391 745</p>
             <p class="text-gray-500">Copyright © 2024. All rights reserved.</p>
         </div>
+
+        <script>
+
+        const toggles = document.querySelectorAll('.accordion-toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.classList.toggle('hidden');
+
+                var heading = document.getElementById('head');
+                var chevron = document.getElementById('chevron');
+
+                // Toggle the 'rotated' class on chevron
+                chevron.classList.toggle('rotated');
+                chevron.classList.toggle('text-gray-300');
+                chevron.classList.toggle('text-gray-50');
+
+                // Toggle text color classes on heading
+                heading.classList.toggle('text-gray-300');
+                heading.classList.toggle('text-gray-50');
+            });
+        });
+
+        </script>
+        
+
     </body>
 </html>
