@@ -88,3 +88,15 @@
     cursor: pointer;
     background-color: #1f2937;
 }
+
+.swiper{
+    overflow: hidden;
+}
+
+.rotated{
+    transform: rotate(180deg);
+}
+
+#accordion-hidden{
+    transition: 0.3s ease-in-out 0s;
+}
