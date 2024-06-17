@@ -76,7 +76,7 @@
     animation: fadeIn 2s ease-in-out;
 }
 
-#getStarted:hover{
+.getStarted:hover{
     box-shadow: 0px 0px 30px 5px #6876f569;
 }
 
@@ -86,7 +86,7 @@
 
 .card-link:hover{
     cursor: pointer;
-    background-color: #1f2937;
+    background-color: #2b3646;
 }
 
 .swiper{
@@ -97,6 +97,103 @@
     transform: rotate(180deg);
 }
 
-#accordion-hidden{
-    transition: 0.3s ease-in-out 0s;
+.carousel-container {
+    position: relative;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s;
+}
+@keyframes slide-horizontal {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide-vertical {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-35%);
+    }
+    100% {
+        transform: translateY(-70%);
+    }
+}
+.animate {
+    animation: slide-horizontal 12s infinite linear;
+}
+@media (min-width: 768px) {
+    .animate {
+        animation: slide-vertical 12s infinite linear;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#fullPopup {
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+    visibility: hidden;
+    z-index: 100000;
+    backdrop-filter: blur(10px);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Visible state of the popup */
+#fullPopup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#closePopup{
+    transition: all 0.2s ease 0s;
+}
+
+#closePopup:hover, #closePopup:active{
+    background-color: #1F2937;
+}
+
+@media (max-width: 639px) {
+    #popupCard {
+      transform: translateY(-3rem);
+    }
+}
+
+#email, #phone, #name, #message {
+    border: none;              /* Remove border */
+    outline: none;             /* Remove outline (focused state border) */
+    box-shadow: none;          /* Remove any box-shadow (often used for focus or error states) */
+    -webkit-appearance: none;  /* Remove default styling in Safari */
+    -moz-appearance: none;     /* Remove default styling in Firefox */
+    appearance: none;          /* Remove default styling for other browsers */
+}
+
+#email:focus, #phone:focus, #name:focus, #message:focus{
+    outline: 2px solid #374151;
+    outline-offset: -2px;
+    outline-color: #374151; /* Ensures the outline color is set immediately */
 }
